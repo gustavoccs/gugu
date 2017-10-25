@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!ping') {
+    if (message.content === '.ping') {
     	message.reply('pong');
   	}
 });
@@ -20,6 +20,12 @@ client.on('message', message => {
         message.reply(":ping_pong: Ping: {}ms".format(round((t2-t1)*1000)))
   	}
 });
-
+client.on('message', message => {
+  // If the message is "what is my avatar"
+  if (message.content === '.avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.displayAvatarURL());
+  }
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
