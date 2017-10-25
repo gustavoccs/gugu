@@ -13,7 +13,11 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!on?') {
-    	message.reply('sim estou on');
+        channel = ctx.message.channel
+        t1 = time.perf_counter()
+        await self.bot.send_typing(channel)
+        t2 = time.perf_counter()
+        await self.bot.say(":ping_pong: Ping: {}ms".format(round((t2-t1)*1000)))
   	}
 });
 
