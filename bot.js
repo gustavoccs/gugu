@@ -17,7 +17,7 @@ client.on('message', message => {
         t1 = time.perf_counter()
         await self.bot.send_typing(channel)
         t2 = time.perf_counter()
-        await self.bot.say(":ping_pong: Ping: {}ms".format(round((t2-t1)*1000)))
+        message.reply(":ping_pong: Ping: {}ms".format(round((t2-t1)*1000)))
   	}
 });
 
