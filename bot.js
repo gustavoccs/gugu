@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === '.ping') {
     	message.reply('pong');
-  	}
+  	
 });
 
 client.on('message', message => {
@@ -18,7 +18,7 @@ client.on('message', message => {
         await self.bot.send_typing(channel)
         t2 = time.perf_counter()
         message.reply(":ping_pong: Ping: {}ms".format(round((t2-t1)*1000)))
-  	}
+  
 });
 client.on('message', message => {
   // If the message is "what is my avatar"
@@ -27,5 +27,5 @@ client.on('message', message => {
     message.reply(message.author.displayAvatarURL());
   }
 });
-// THIS  MUST  BE  THIS  WAY
+
 client.login(process.env.BOT_TOKEN);
