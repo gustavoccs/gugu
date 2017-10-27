@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'oi') {
+    if (message.content === '') {
     	message.reply('ti fude kobreira \n nada ver irmao');
   	}
 });
