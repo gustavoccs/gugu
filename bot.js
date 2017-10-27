@@ -6,16 +6,47 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!chk 5140040222671014|09|2019|158') {
-    	message.reply('APROVADA ESSA CC SUA');
+    if (message.content === 'teste') {
+    	message.reply('testado1');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '@naochupopintodeadm, testado') {
-    	message.reply('testado');
+    if (message.content === 'teste') {
+    	message.reply('testado2');
   	}
 });
+
+client.on('message', message => {
+    if (message.content === 'teste') {
+    	message.reply('testado3');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'teste') {
+    	message.reply('testado4');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'teste5') {
+    	message.reply('testado5');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'teste') {
+    	message.reply('testado6');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'teste') {
+    	message.reply('testado7');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
