@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!chk ') {
+    if (message.content === '!chk 5140040222671014|09|2019|158') {
     	message.reply('APROVADA ESSA CC SUA');
   	}
 });
