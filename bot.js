@@ -19,9 +19,9 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === 'fala') {
-        usage: "<message>",
-        description: "bot says message with text to speech",
         process: function(bot,msg,suffix){ msg.channel.send(suffix,{tts:true});}
+    }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
