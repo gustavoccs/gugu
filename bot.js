@@ -12,10 +12,16 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!votdsaonao') {
-    	message.reply('ai sim votar nao é legau\n nada ver irmao');
+    if (message.content === 'teste') {
+    	message.reply('testado');
   	}
 });
+
+client.on('message', message => {
+   if (message.content === 'fala') {
+        usage: "<message>",
+        description: "bot says message with text to speech",
+        process: function(bot,msg,suffix){ msg.channel.send(suffix,{tts:true});}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
