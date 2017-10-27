@@ -6,8 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '') {
-    	message.reply('ti fude kobreira \n nada ver irmao');
+    if (message.content === '!votosim') {
+    	message.reply('ti fude nao bane o cara nao \n nada ver irmao');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!votonao') {
+    	message.reply('ai sim votar nao é legau\n nada ver irmao');
   	}
 });
 
