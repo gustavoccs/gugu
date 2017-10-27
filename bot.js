@@ -17,11 +17,5 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-   if (message.content === 'fala') {
-        process: function(bot,msg,suffix){ msg.channel.send(suffix,{tts:true});}
-    }
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
