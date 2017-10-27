@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!chk') {
-    	msg.channel.sendMessage("APROVADA" + msg.author));
+    	message.reply("APROVADA" + msg.author));
   	}
 });
 
