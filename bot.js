@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!chk') {
+    if (message.content === '!chk ') {
     	message.reply('APROVADA ESSA CC SUA');
   	}
 });
