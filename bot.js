@@ -6,13 +6,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!votosim') {
+    if (message.content === '!vostosim') {
     	message.reply('ti fude nao bane o cara nao \n nada ver irmao');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '!votonao') {
+    if (message.content === '!votdsaonao') {
     	message.reply('ai sim votar nao é legau\n nada ver irmao');
   	}
 });
