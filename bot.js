@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!vostosim') {
-    	message.reply('ti fude nao bane o cara nao \n nada ver irmao');
+    if (message.content === 'toca ae') {
+    	message.reply('splash toquei é nois mano tmj ');
   	}
 });
 
