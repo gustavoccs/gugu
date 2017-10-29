@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'teste') {
-    	message.reply('testado2');
+    	message.reply('Pedrinho Guimarães');
   	}
 });
 
@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'teste') {
-    	message.reply('testado4');
+    	message.reply('https://media.discordapp.net/attachments/297732013006389252/374321541413994496/image.png');
   	}
 });
 
@@ -43,7 +43,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'teste') {
-    	message.reply('testado7');
+    	message.reply('sou o thesad');
   	}
 });
 
